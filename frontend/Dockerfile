@@ -1,4 +1,4 @@
+FROM nginx:alpine
 
-    FROM nginx:alpine
-    COPY ./frontend /usr/share/nginx/html
-    EXPOSE 80
+# Копіюємо HTML, JS, CSS у стандартну директорію Nginx
+COPY frontend/ /usr/share/nginx/html/
